@@ -19,23 +19,24 @@ namespace Adding_table_container
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            RoundButton[] buttons = { btn1, btn2, btn3, btn4 };
-            foreach (var button in buttons)
-                button.BackColor = Color.Tan;
+            ChangeButtonColor(Color.Tan);
         }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            RoundButton[] buttons = { btn1, btn2, btn3, btn4 };
-            foreach (var button in buttons)
-                button.BackColor = Color.WhiteSmoke;
+            ChangeButtonColor(Color.WhiteSmoke);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ChangeButtonColor(Color.Tan);             
+        }
+
+        private void ChangeButtonColor(Color color)
+        {
             RoundButton[] buttons = { btn1, btn2, btn3, btn4 };
             foreach (var button in buttons)
-                button.BackColor = Color.Tan;
+                button.BackColor = color;
         }
     }
 }
