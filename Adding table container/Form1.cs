@@ -14,28 +14,28 @@ namespace Adding_table_container
         private void btn_Click(object sender, EventArgs e)
         {
             RoundButton bulb = (RoundButton)sender;
-            bulb.BackColor = Color.Red;
+            bulb.BackColor = Color.WhiteSmoke;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             RoundButton[] buttons = { btn1, btn2, btn3, btn4 };
             foreach (var button in buttons)
-                button.BackColor = Color.AntiqueWhite;
+                button.BackColor = Color.Tan;
         }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
             RoundButton[] buttons = { btn1, btn2, btn3, btn4 };
             foreach (var button in buttons)
-                button.BackColor = Color.Red;
+                button.BackColor = Color.WhiteSmoke;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             RoundButton[] buttons = { btn1, btn2, btn3, btn4 };
             foreach (var button in buttons)
-                button.BackColor = Color.AntiqueWhite;
+                button.BackColor = Color.Tan;
         }
     }
 }
